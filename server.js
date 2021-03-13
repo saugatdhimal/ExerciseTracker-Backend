@@ -8,7 +8,7 @@ import exerciseRouter from './routes/exercise.js'
 import userRouter from './routes/user.js'
 
 const app = express()
-const port = process.env.PORT || 5000
+const Port = process.env.PORT || 5000
 
 app.use(cors())
 app.use(express.json())
@@ -26,8 +26,8 @@ mongoose.connect(process.env.DB,{useNewUrlParser: true, useUnifiedTopology: true
         
 
 
-app.listen(port, () => {
-    console.log(`Server is running on Port: ${port}`)
+app.listen(Port, () => {
+    console.log(`Server is running on Port: ${Port}`)
 })
 
 
